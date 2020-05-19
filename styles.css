@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,40 +9,68 @@
   background-repeat: no-repeat;
   background-color: rgb(80, 155, 245);
   background-position-x: right;
+  background-position-y: bottom;
+}
+.hero-nav{
+  display: inline-grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 24px 0;
 }
 .hero-logo {
   width: 132px;
 }
 .hero ul {
   list-style-type: none;
-  display: inline-block;
+  /* display: inline-block; */
+  justify-self: end;
 }
 .hero li {
   display: inline-block;
+  padding: 0 12px;
+}
+.hero li:last-child {
+  padding-right: 0;
 }
 .hero-menu li a {
   text-decoration: none;
   color: #fff;
-  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: bold;
+}
+.hero-content {
+  padding: 40px 0;
 }
 h1 {
   color: #fff;
   font-size: 80px;
   font-weight: bold;
 }
+h2 {
+  color: #000;
+  font-size: 48px;
+  font-weight: bold;
+}
 h3 {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
-  margin-top: 30px;
+  margin: 30px 0 20px 0;
+}
+h4 {
+  font-size: 21px;
+  color: #000;
+  font-weight: bold;
+  margin: 24px 0 8px 0;
 }
 .caption a, .caption {
   color: #fff;
   font-size: 12px;
   font-weight: bold;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 .btn-primary {
   background-color: rgb(29, 185, 85);
@@ -57,4 +85,46 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
+}
+.container{
+  max-width: 1032px;
+  margin: 0 auto;
+}
+.features-section h2{
+  text-align: center;
+  margin: 72px 0;
+}
+.features{
+  display: flex;
+  margin-bottom: 75px;
+}
+.features-items{
+  /* margin: 0 71px; */
+  flex-grow: 1;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 285px;
+}
+.features-img img{
+  width: 142px;
+  display: block;
+  margin: 0 auto;
+}
+.cancel-section {
+  background-color:#f8f8f8;
+  padding: 75px 0;
+}
+.cancel-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cancel-items img {
+  width: 56px;
+}
+.cancel-items h2 {
+  margin: 30px;
+}
+.cancel-items p {
+  font-size: 24px;
 }
